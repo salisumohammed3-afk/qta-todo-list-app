@@ -1,0 +1,2 @@
+# qta-todo-list-app
+A simple to-do list web application connected to Supabase
