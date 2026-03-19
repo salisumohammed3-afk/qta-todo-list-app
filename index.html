@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTA Todo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QTA Todo List</h1>
+        </header>
+        
+        <main>
+            <form id="todo-form" class="todo-form">
+                <input type="text" id="todo-input" placeholder="Add a new todo..." required>
+                <button type="submit">Add Todo</button>
+            </form>
+            
+            <div id="loading" class="loading hidden">Loading...</div>
+            <div id="error" class="error hidden"></div>
+            
+            <ul id="todo-list" class="todo-list"></ul>
+        </main>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+</html>
